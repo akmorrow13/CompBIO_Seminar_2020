@@ -1,3 +1,17 @@
+r"""
+========================
+PlotMAPQHelper functions
+========================
+.. currentmodule:: PlotMAPQ.functions
+
+.. autosummary::
+  :toctree: _generate/
+
+  PrintDictionaryToTab
+  SaveMAPQHistogram
+"""
+
+
 import matplotlib.pyplot as plt
 
 

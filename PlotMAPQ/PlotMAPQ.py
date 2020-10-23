@@ -1,3 +1,15 @@
+r"""
+========
+PlotMAPQ
+========
+.. currentmodule:: PlotMAPQ.PlotMAPQ
+
+.. autosummary::
+  :toctree: _generate/
+
+  PlotMAPQ
+  main
+"""
 
 # You can import relative imports from your package. To do this, you can specify
 # the relative path of the module you would like to import. In this case,
@@ -14,6 +26,14 @@ def PlotMAPQ(bamIn,
             sampleName,
             dirOut,
             quiet):
+    """ Plots MAPQ distributions using matplotlib.
+
+    Args:
+      :param bamIn: input bam file
+      :param sampleName: name of bam sample
+      :param dirOut: output directory to save results to
+      :param quiet: whether to output progress to stdout
+    """
 
     mapqDict = {}
 
@@ -41,6 +61,7 @@ def PlotMAPQ(bamIn,
 
 
 def main():
+    """ main() function used to run PlotMAPQ from the command line. """
 
     parser = argparse.ArgumentParser(
         usage="%(prog)s [options] alignment_bam sample_name out_directory",
