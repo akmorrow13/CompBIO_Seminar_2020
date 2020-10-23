@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import PlotMAPQ.PlotMAPQ
+
+# call main() from PlotMAPQ, which takes in command line arguments.
+PlotMAPQ.PlotMAPQ.main()
