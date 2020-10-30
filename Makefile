@@ -63,6 +63,6 @@ pypi: clean clean_sdist check_clean_working_copy
 	set -x \
 	&& $(python) setup.py egg_info sdist bdist_egg \
 	&& twine check dist/* \
-	&& twine upload dist/*
+	&& twine upload --repository testpypi dist/*
 clean_pypi:
 	- rm -rf build/

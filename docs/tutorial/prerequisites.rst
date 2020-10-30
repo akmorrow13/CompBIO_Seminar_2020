@@ -13,12 +13,12 @@ Requirements
 
 Conda is not required for this tutorial, but will make it easier to manage your project dependencies.
 
-Creating a conda virtual environment
-------------------------------------
+Creating a conda environment
+----------------------------
 
 We use conda to manage requirements for different projects. You may be working on
-multiple python projects that require different modules. To manage this, we can
-create different conda virtual environments for each project. Although this step is
+multiple python projects that require different packages and versions. To manage this, we can
+create different conda environments for each project. Although this step is
 not necessary, it will help you manage your projects so they do not conflict.
 
 
@@ -34,7 +34,7 @@ Getting the code
 ----------------
 
 Next, we will want to pull the code for this tutorial. This is a finished project
-and includes all the code needed. You may use this repository as a reference for
+and includes all the code needed. You can use this repository as a reference for
 future projects.
 
 Clone the repository:
@@ -44,4 +44,4 @@ Clone the repository:
 	git clone https://github.com/akmorrow13/CompBIO_Seminar_2020.git
 	cd CompBIO_Seminar_2020
 
-You are all set. Let's get started!
+You now have everything you need. Let's get started!
