@@ -7,7 +7,7 @@ that you have some understanding of python, and have it installed on your comput
 Requirements
 ------------
 
-* `conda <https://docs.conda.io/en/latest/miniconda.html>`__*
+* `conda <https://docs.conda.io/en/latest/miniconda.html>`_
 * python 3.6
 * git
 * a `TestPyPI <https://test.pypi.org/>`_ account. This is optional, but is required if you want upload a test package to TestPyPI.*
