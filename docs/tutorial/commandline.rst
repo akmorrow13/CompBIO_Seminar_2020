@@ -2,7 +2,10 @@ Command Line Scripts
 ====================
 
 We would like to add a command line tool that allows users to run PlotMAPQ from
-the command line. This allows users to call our modules from a script, as well as python.
+the command line. 
+As mentioned in :ref:`Project Setup`, we have included a `bin` directory
+that contains scripts that can be run from the command line.
+This allows users to call our modules from a script, as well as python.
 To do so, all we have to do is add a script that calls PlotMAPQ,
 and then declare the script in our setup script.
 
@@ -13,9 +16,9 @@ and then declare the script in our setup script.
 .. code:: bash
 
 	setup(
-	...
-	scripts = ['/bin/plot-mapq']
-	...
+		...
+		scripts = ['/bin/plot-mapq']
+		...
 	)
 
 For more information on command line tools, see the

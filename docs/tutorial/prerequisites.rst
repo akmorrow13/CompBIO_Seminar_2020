@@ -1,17 +1,17 @@
-Package Basics
-==============
+Prerequisites
+=============
 
-First, we require some prerequisites in order to get started. This tutorial assumes
+First, we require some prerequisites before getting started with this tutorial. This tutorial assumes
 that you have some understanding of python, and have it installed on your computer.
 
 Requirements
 ------------
 
-* `conda <https://docs.conda.io/en/latest/miniconda.html>`__
+* `conda <https://docs.conda.io/en/latest/miniconda.html>`__*
 * python 3.6
 * git
 
-Conda is not required for this tutorial, but will make it easier to manage your project dependencies.
+*Conda is not required for this tutorial, but will make it easier to manage your project dependencies.
 
 Creating a conda environment
 ----------------------------
@@ -22,7 +22,7 @@ create different conda environments for each project. Although this step is
 not necessary, it will help you manage your projects so they do not conflict.
 
 
-Let's create a conda environment:
+Let's create a conda environment for our project:
 
 .. code:: bash
 
@@ -34,7 +34,7 @@ Getting the code
 ----------------
 
 Next, we will want to pull the code for this tutorial. This is a finished project
-and includes all the code needed. You can use this repository as a reference for
+and includes all the code you need. You can use this repository as a reference for
 future projects.
 
 Clone the repository:

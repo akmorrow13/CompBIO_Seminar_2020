@@ -21,12 +21,12 @@ Installation from Pip
 
 .. code:: bash
 
-	pip install MAPQTools
+	pip install -i https://test.pypi.org/simple/ MAPQTools
 
 Installation from Source
 ------------------------
 
-1. Create and activate a pytion 3.7 conda venv:
+1. Create and activate a pytion 3.6 conda venv:
 
 .. code:: bash
 
@@ -34,7 +34,7 @@ Installation from Source
 	source activate MAPQTools
 
 
-2. Get Epitome code:
+2. Get the code:
 
 .. code:: bash
 

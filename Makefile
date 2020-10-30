@@ -48,21 +48,11 @@ check_build_reqs:
 test: check_build_reqs
 	$(python) -m pytest -vv --junitxml target/pytest-reports/tests.xml $(tests)
 
-check_clean_working_copy:
-	@printf "$(green)Checking if your working copy is clean ...$(normal)"
-	@git diff --exit-code > /dev/null \
-                || ( printf "$(red)Your working copy looks dirty.$(normal)" ; false )
-	@git diff --cached --exit-code > /dev/null \
-                || ( printf "$(red)Your index looks dirty.$(normal)" ; false )
-	@test -z "$$(git ls-files --other --exclude-standard --directory)" \
-                || ( printf "$(red)You have are untracked files:$(normal)" \
-                        ; git ls-files --other --exclude-standard --directory \
-                        ; false )
 
-pypi: clean clean_sdist check_clean_working_copy
+pypi: clean clean_sdist
 	set -x \
 	&& $(python) setup.py egg_info sdist bdist_egg \
 	&& twine check dist/* \
-	&& twine upload --repository testpypi dist/*
+	&& twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 clean_pypi:
 	- rm -rf build/

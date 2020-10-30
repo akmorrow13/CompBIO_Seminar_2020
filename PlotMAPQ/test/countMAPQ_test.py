@@ -40,6 +40,9 @@ class TestMAPQ(MAPQTestCase):
         cmd = ' '.join(["plot-mapq", bamIn, sampleName, tmpDir])
         p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)
         output = p.stdout.read()
+        error = p.stderr.read()
+        print(output)
+        print(error)
 
         assert(os.path.exists(os.path.join(tmpDir, sampleName + "_MAPQScores.tab")))
         assert(os.path.exists(os.path.join(tmpDir, sampleName + "_MAPQhist.pdf")))

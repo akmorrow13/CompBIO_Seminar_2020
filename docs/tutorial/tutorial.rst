@@ -7,7 +7,13 @@ setup a project, how to build and implement unit tests, how to create documentat
 and how to publish your tool to bioconda and PyPI.
 
 In this tutorial, we will build a simple project that plots mapping quality distribution
-from an `input bam file <https://genome.ucsc.edu/goldenPath/help/bam.html>`_.
+from an `input bam file <https://genome.ucsc.edu/goldenPath/help/bam.html>`_. Below is a 
+sample plot that our tool produces:
+
+.. image:: ../images/SampleBam_MAPQDist.png
+	:width: 400
+	:align: center
+	:alt: MAPQ histogram plot
 
 
 .. toctree::
@@ -21,3 +27,7 @@ from an `input bam file <https://genome.ucsc.edu/goldenPath/help/bam.html>`_.
    pypi
    conda
    documentation
+   end
+
+
+Let's get started!
