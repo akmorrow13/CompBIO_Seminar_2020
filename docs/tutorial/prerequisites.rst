@@ -10,8 +10,10 @@ Requirements
 * `conda <https://docs.conda.io/en/latest/miniconda.html>`__*
 * python 3.6
 * git
+* a `TestPyPI <https://test.pypi.org/>`_ account. This is optional, but is required if you want upload a test package to TestPyPI.*
 
-*Conda is not required for this tutorial, but will make it easier to manage your project dependencies.
+* These requirements are optional, but will make it easier to follow along with the tutorial and manage your project.
+
 
 Creating a conda environment
 ----------------------------
