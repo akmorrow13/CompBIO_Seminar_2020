@@ -12,7 +12,7 @@ We have provided some documentation in the ``docs/`` directory. This directory c
 reStructuredText (rst) files that contain documentation we would like the public to see. Additionally,
 there are some other files:
 
-- ``conf.py``: configuration file that is required by Sphinx. `Documentation for ``conf.py`` can be found here <https://www.sphinx-doc.org/en/master/usage/configuration.html>`_.
+- ``conf.py``: configuration file that is required by Sphinx. `Documentation for conf.py can be found here <https://www.sphinx-doc.org/en/master/usage/configuration.html>`_.
 - ``Makefile``: This is an optional file that makes it easy to build and view your docs locally before pushing them to readthedocs.
 - ``requirements.txt``: This file contains python requirements needed to build docs locally.
 
@@ -48,7 +48,7 @@ automatically generate documentation for our package. This also requires respect
 Adding documentation to readthedocs
 -----------------------------------
 
-Finally, we want to publish our documentation so it is visible to anyone who wants to use our tool. 
+Finally, we want to publish our documentation so it is visible to anyone who wants to use our tool.
 
 1. Navigate to `readthedocs <https://readthedocs.org/>`_. If you do not have an account, create one. You will have to link your Github account with your readthedocs account to access your github repositories.
 2. Click ``Import a Project``

@@ -7,12 +7,10 @@ that you have some understanding of python, and have it installed on your comput
 Requirements
 ------------
 
-* `conda <https://docs.conda.io/en/latest/miniconda.html>`_
+* `conda <https://docs.conda.io/en/latest/miniconda.html>`_. This is optional, but will make it easier to manage project requirements.
 * python 3.6
 * git
-* a `TestPyPI <https://test.pypi.org/>`_ account. This is optional, but is required if you want upload a test package to TestPyPI.*
-
-* These requirements are optional, but will make it easier to follow along with the tutorial and manage your project.
+* a `TestPyPI <https://test.pypi.org/>`_ account. This is optional, but is required if you want upload a test package to TestPyPI.
 
 
 Creating a conda environment
