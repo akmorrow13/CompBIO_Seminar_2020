@@ -32,20 +32,5 @@ class TestMAPQ(MAPQTestCase):
         SaveMAPQHistogram(dictIn, filePath, title="MAPQ")
         assert(os.path.exists(filePath))
 
-
-    def test_countMAPQ(self):
-        tmpDir = self.tmpDir()
-        sampleName = "mouseSample"
-        bamIn = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data/mouse_chrM.bam")
-        cmd = ' '.join(["plot-mapq", bamIn, sampleName, tmpDir])
-        p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)
-        output = p.stdout.read()
-        error = p.stderr.read()
-        print(output)
-        print(error)
-
-        assert(os.path.exists(os.path.join(tmpDir, sampleName + "_MAPQScores.tab")))
-        assert(os.path.exists(os.path.join(tmpDir, sampleName + "_MAPQhist.pdf")))
-
 if __name__ == '__main__':
     unittest.main()
