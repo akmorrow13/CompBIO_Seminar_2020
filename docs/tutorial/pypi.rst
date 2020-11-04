@@ -42,7 +42,7 @@ Uploading to PyPI
 The next step is to upload our package to PyPI so others can use it! However, this is a tutorial,
 so we don't really want to upload it to PyPI. To get an idea of how PyPI works, we will use `test PyPI <https://test.pypi.org/>`_ to test uploading our package.
 
-1. First, `make an account on test Pypi <https://test.pypi.org/account/register/>`_.
+1. First, `make an account on test PyPI <https://test.pypi.org/account/register/>`_.
 2. Verify your email address.
 3. If you want to test uploading this project to PyPI, you will have to change the name of the project to be unique, because I already am using the name MAPQTools. To do so, change ``name="MAPQTools"`` to ``name="MAPQTools-YOUR-USERNAME"`` in ``setup.py`` to create a unique project name.
 

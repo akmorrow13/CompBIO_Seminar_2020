@@ -106,10 +106,3 @@ def main():
                               sys.exc_info()[2])[-1][0]),
                           traceback.extract_tb(sys.exc_info()[2])[-1][1]))
         sys.exit(1)
-
-
-# When you execute a python module through the command line, the __name__ variable
-# is set to __main__. Therefore, this code snipped runs the function main()
-# when executed from the command line.
-if __name__ == "__main__":
-    main()

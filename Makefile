@@ -46,12 +46,11 @@ check_build_reqs:
                 || ( printf "$(redpip)Build requirements are missing. Run 'make prepare' to install them.$(normal)" ; false )
 
 test: check_build_reqs
-	$(python) -m pytest -vv --junitxml target/pytest-reports/tests.xml $(tests)
-
+	$(python) -m pytest -vv $(tests)
 
 pypi: clean clean_sdist
 	set -x \
-	&& $(python) setup.py egg_info sdist bdist_egg \
+	&& $(python) setup.py sdist bdist_wheel \
 	&& twine check dist/* \
 	&& twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 clean_pypi:

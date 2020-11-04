@@ -23,7 +23,11 @@ import mock
 
 # These lines added to enable Sphinx autodocumentation.
 MOCK_MODULES = [
-    "pandas",
+    "matplotlib",
+    "matplotlib.pyplot",
+    "pysam",
+    "traceback",
+    "argparse"
 ]
 
 for mod_name in MOCK_MODULES:
@@ -229,7 +233,7 @@ class PatchedHTMLTranslator(HTMLTranslator):
         if 'target' in node:
             atts['target'] = node['target']
         self.body.append(self.starttag(node, 'a', '', **atts))
- 
+
         if node.get('secnumber'):
             self.body.append(('%s' + self.secnumber_suffix) %
                              '.'.join(map(str, node['secnumber'])))
